@@ -6,6 +6,9 @@
 - Transition
 - Transition & Transform
 - Animation
+
+* Adv Animation
+
 - Flex
 - Grid
 - Media query
