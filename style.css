@@ -1,0 +1,18 @@
+.box {
+  width: 400px;
+  height: 200px;
+  border: 5px solid rgb(8, 19, 19);
+  overflow: scroll;
+  margin: 10px;
+}
+
+.box2 {
+  width: 400px;
+  height: 200px;
+  border: 5px solid rgb(33, 83, 83);
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}
