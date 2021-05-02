@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: none;
+            float: left;
+            border-radius: 10px;
+            box-shadow: 10px 10px 40px rgb(112, 69, 53);
+        }
+
+        .outer{
+            background-color: rgba(133, 127, 127, 0.596);
+            margin: 10px;
+            transform: skew(-20deg) translate(100px);
+            }
+
+        .inner {
+            background-color: rgb(146, 58, 58);
+            transform: rotate(50deg) scale(.65);
+           
+    
+        }
+
+        h1 { text-align: center;}
+    </style>
+
+</head>
+<body>
+<header><h1>Transform</h1></header>
+
+ <div class="box outer">
+     <div class="box inner">box-1</div>
+ </div>
+
+ <div class="box outer">
+     <div class="box inner">box-2</div>
+ </div>
+
+ <div class="box outer">
+     <div class="box inner">box-3</div>
+ </div>
+
+<div class="box outer">
+    <div class="box inner">box-4</div>
+</div>
+
+<div class="box outer">
+    <div class="box inner">box-5</div>
+</div>
+
+</body>
+</html>
