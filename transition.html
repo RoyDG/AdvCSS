@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 3px solid cyan;
+        background-color: darkcyan;
+        transition: width 5s ease 3ms;
+    }
+
+    .box:hover{
+        width: 400px;
+    }
+
+    .box2 {
+        width: 200px;
+        height: 200px;
+        border: 3px solid rgb(42, 47, 47);
+        background-color: rgb(6, 151, 67);
+        transition: background-color 5s ease 3ms;
+    }
+    .box2:hover{
+        background-color: darkkhaki;
+        
+    }
+</style>
+
+<body>
+    
+    <div class="box">
+        <h1>Transition-Width</h1>
+    </div>
+    <div class="box2">
+        <h1>Transition-Color</h1>
+    </div>
+</body>
+</html>
