@@ -9,6 +9,8 @@
 
 <style>
     .box {
+        margin-bottom: 20px;
+        margin-left: 20px;
         width: 200px;
         height: 200px;
         background-color: darkcyan;
@@ -20,6 +22,9 @@
     }
 
     .box2 {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        float: left;
         width: 200px;
         height: 200px;
         background-color: rgb(6, 151, 67);
@@ -30,7 +35,11 @@
         
     }
 
-    .fade, .color, .grow, .shrink {
+    .fade, .color, .grow, .shrink, .rotate, .circle, .threeD {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        float: left;
         width:200px;
         height:200px;
         background-color:#676470;
@@ -48,13 +57,37 @@
 
     .grow:hover {    
         color: cyan;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
         transform: scale(1.2);
     }
 
     .shrink:hover {
         background-color: cyan;
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
         transform: scale(0.8);
     }
+
+    .rotate:hover{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+    }
+
+    .circle:hover{
+        border-radius:50%;
+}
+
+.threeD:hover{
+        box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
 </style>
 
 <body>
@@ -78,6 +111,14 @@
     <div class="shrink">
         <h1>Shrink</h1>
     </div>
-    <div></div>
+    <div class="rotate">
+        <h1>Rotate</h1>
+    </div>
+    <div class="circle">
+        <h1>Circle</h1>
+    </div>
+    <div class="threeD">
+        <h1>3D</h1>
+    </div>
 </body>
 </html>
