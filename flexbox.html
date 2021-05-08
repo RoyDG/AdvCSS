@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .box {
+           width: 300px;
+           height: 200px;
+           border: 2px solid burlywood;
+           border-radius: 5px;
+           font-weight: 40px;
+           margin: 5px;
+           text-align: center;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .gaming{
+            margin-left: auto;
+        }
+
+        .container3 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+       .T {
+           margin-left: 14%;
+       }
+        .F {
+            margin-left: 37%;
+        }
+        .G {
+            margin-left: 60%;
+        }
+
+    .container4{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .fishing{
+        margin-left: auto;
+        flex: 1;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">Traveling</div>
+        <div class="box">Fishing</div>
+        <div class="box">Gaming</div>
+    </div>
+
+    <div class="container2">
+        <div class="box">Traveling</div>
+        <div class="box">Fishing</div>
+        <div class="box gaming">Gaming</div>
+    </div>
+
+    <div class="container3">
+        <div class="box T">Traveling</div>
+        <div class="box F">Fishing</div>
+        <div class="box G">Gaming</div>
+    </div>
+
+    <div class="container4">
+        <div class="box">Traveling</div>
+        <div class="box fishing">Fishing</div>
+        <div class="box">Gaming</div>
+    </div>
+    
+</body>
+</html>
