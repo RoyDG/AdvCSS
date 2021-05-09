@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .food {
+            margin-left: 10px;
+            border-radius: 15px;
+            border: 2px solid rgb(85, 43, 43);
+            width: 350px;
+            margin: 10px;
+        }
+        .food img {
+            width: 100%;
+        }
+        .food p {
+            margin: 10px;
+        }
+
+        /*
+            using mediaquery
+        @media (max-width: 760px) {
+            .container{
+                flex-direction: column;
+            }
+            .container .food {
+                background-color: rosybrown;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container .food {
+                background-color: skyblue;
+            }
+            
+        } 
+        */
+    </style>
+</head>
+<body>
+<div class="container">
+   <div class="food">
+       <img src="img/food.jpg" alt="">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio modi beatae quibusdam! Mollitia odit nemo repellat aperiam saepe recusandae. Unde?</p>
+   </div>
+   <div class="food">
+       <img src="img/food.jpg" alt="">
+       <p>Sed nisi asperiores, facilis rem animi distinctio laborum labore consectetur modi, eaque vitae laboriosam iusto mollitia at perspiciatis esse vero?</p>
+   </div>
+   <div class="food">
+       <img src="img/food.jpg" alt="">
+       <p>Labore aliquam, quasi iure vitae nisi non? Dignissimos, facere. Dicta dolorem sunt facilis laudantium iusto nihil molestias delectus quo id.</p>
+   </div>
+   <div class="food">
+       <img src="img/food.jpg" alt="">
+       <p>Voluptatum impedit distinctio laboriosam repellendus eaque officia. Quasi sed incidunt, laudantium aut architecto quos ducimus impedit. Dolorum nobis accusamus deleniti.</p>
+   </div>
+   <div class="food">
+       <img src="img/food.jpg" alt="">
+       <p>Dolor nam, sapiente corrupti officia, id quidem et, adipisci itaque corporis tenetur magni error? Recusandae, velit? Natus molestiae expedita amet.</p>
+   </div>
+   <div class="food">
+       <img src="img/food.jpg" alt="">
+       <p>Ea possimus, quaerat quasi cum soluta porro obcaecati odit similique, modi asperiores quisquam aliquam provident fugiat. Vel dolore nulla pariatur?</p>
+   </div>
+</div>
+</body>
+</html>
