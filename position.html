@@ -1,59 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Position</title>
     <style>
-        .container{
-            display: flex;
-            position: relative;
-        }
-        .box{
-            width: 200px;
-            height: 200px;
-            background-color: rosybrown;
-            margin: 10px;
-            border: 2px solid darkred;
-        }
-        .box2{
-            position: relative;
-            left: 100px;
-            bottom: 50px;
-        }
-        .box3{
-            z-index: 1;
-        }
-        .box4 {
-            position: absolute;
-            top: 100px;
-            left: 50px;
-        }
-    </style>
-</head>
-<body>
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 15px;
+        background-color: #cae8ca;
+        border: 2px solid #4caf50;
+      }
 
+      .container {
+        display: flex;
+        position: relative;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: rosybrown;
+        margin: 10px;
+        border: 2px solid darkred;
+      }
+      .box2 {
+        position: relative;
+        left: 100px;
+        bottom: 50px;
+      }
+      .box3 {
+        z-index: 1;
+      }
+      .box4 {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Position</h1>
-    <h3>More position</h3>
+
+    <p>
+      Try to <b>scroll</b> inside this frame to understand how sticky
+      positioning works.
+    </p>
+
+    <div class="sticky">I am sticky!</div>
+
+    <div style="padding-bottom: 300px">
+      <p>
+        In this example, the sticky element sticks to the top of the page (top:
+        0), when you reach its scroll position.
+      </p>
+      <p>Scroll back up to remove the stickyness.</p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+    </div>
 
     <section class="container">
-        <div class="box box1">
-            <h3>box-1</h3>
-        </div>
-        <div class="box box2">
-            <h3>box-2</h3>
-        </div>
-        <div class="box box3">
-            <h3>box-3</h3>
-        </div>
-        <div class="box box4">
-            <h3>box-4</h3>
-        </div>
-        <div class="box box5">
-            <h3>box-5</h3>
-        </div>
+      <div class="box box1">
+        <h3>box-1</h3>
+      </div>
+      <div class="box box2">
+        <h3>box-2</h3>
+      </div>
+      <div class="box box3">
+        <h3>box-3</h3>
+      </div>
+      <div class="box box4">
+        <h3>box-4</h3>
+      </div>
+      <div class="box box5">
+        <h3>box-5</h3>
+      </div>
     </section>
-    
-</body>
+  </body>
 </html>
