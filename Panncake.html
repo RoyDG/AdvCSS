@@ -14,15 +14,17 @@
             box-sizing: border-box;
             color: inherit;
             font: inherit;
+            border: 0;
         }
         body {
             font-family: "poppins", sans-serif;
             padding: 0;
             margin: 0;
+            
         }
         .container {
-            max-width: 1342px;
-            padding: 24px;        
+            max-width: 1380px;
+            padding: 24px;
         }
         header {
             display: flex;
@@ -31,6 +33,9 @@
         .navigation {
             margin-left: 40px;
             flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .logo {
             width: 100px;
@@ -40,24 +45,68 @@
             color: rgb(112, 115, 116);
             text-decoration: none;
         }
-        footer a {
-            text-decoration: none;
-            margin-right: 24px;
-            color: rgba(255, 145, 0, 0.781);
-            
-            
+        .nav-button {
+            border: none;
+            border-radius: 5px;
+            background: rgba(235, 76, 102, 0.746);
+            color: white;
+            padding: 5px;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            padding: 35px 0;
+        }
+        .main-content {
+            flex: 1;
+        }
+        .headline {
+            font-weight: 400;
+            font-size: 50px;
+        }
+        .description {
+            color: #828282;
+            margin-top: 20px;
+            margin-bottom: 100px;
         }
         .main-img img {
             width: 100%;
-        } 
+            
+        }
+        .main-img {
+            flex: 1;
+            margin-top: 100px;
+        }
+        .video-button {
+            display: flex;
+            justify-content: center;
+        }
+        .play-button {
+            border: 1px solid rgba(128, 128, 128, 0.479);
+            border-radius: 10px;
+            background: white;
+            color: peru;
+            padding: 10px;
+        }
+
+                    /* footer  */
         footer {
             display: flex;
-            background-color: rgba(182, 195, 199, 0.726);
-            justify-content: space-evenly;
-            padding: 24px 0 24px 0;
+            background-color: rgba(199, 199, 199, 0.726);
+            justify-content: space-between;
+            padding: 24px;
+            
+        }
+        footer a {
+            text-decoration: none;
+            margin-right: 24px;
+            color: rgb(120, 153, 136);  
         }
         .copy-right {
-            font-size: 20px;
+            
             color: rgb(120, 153, 136);
         }
       
@@ -69,13 +118,21 @@
    <div class="container">
        <header>
             <nav class="navigation">
-                <img class="logo" src="img/logo.png" alt="">
-                <a href="" class="nav-item">Home</a>
-                <a href="" class="nav-item">About</a>
-                <a href="" class="nav-item">Services</a>
-                <a href="" class="nav-item">Contact-Us</a>
+                <a href="#home">
+                    <img class="logo" src="img/logo.png" alt="">
+                </a>
+                <div>
+                    <a href="#home" class="nav-item">Home</a>
+                    <a href="#about" class="nav-item">About</a>
+                    <a href="#services" class="nav-item">Services</a>
+                    <a href="#contact" class="nav-item">Contact-Us</a>
+                </div>
+                <div>
+                    <button class="nav-button">Getting Started</button>
+                </div>
             </nav>
-            <button class="nav-button">Getting Started</button>
+            
+            
        </header>
 
        <main>
@@ -86,10 +143,13 @@
                <p class="description">
                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptates dolorem repellat alias, tempore magnam obcaecati soluta! Unde, qui cum.
                </p>
-               <button class="play-button">
-                <i class="fa fa-play-circle"></i>
-                   Discover Videos
-               </button>
+               <div class="video-button">
+                    <button class="play-button">
+                        <i class="fa fa-play-circle"></i>
+                        Discover Videos
+                    </button>
+               </div>
+              
             </div>
             <div class="main-img">
                 <img src="img/data.webp" alt="">
