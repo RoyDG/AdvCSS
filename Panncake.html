@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            color: inherit;
+            font: inherit;
+        }
+        body {
+            font-family: "poppins", sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            max-width: 1342px;
+            padding: 24px;        
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+        .navigation {
+            margin-left: 40px;
+            flex-grow: 1;
+        }
+        .logo {
+            width: 100px;
+        }
+        .nav-item {
+            margin-left: 24px;
+            color: rgb(112, 115, 116);
+            text-decoration: none;
+        }
+        footer a {
+            text-decoration: none;
+            margin-right: 24px;
+            color: rgba(255, 145, 0, 0.781);
+            
+            
+        }
+        .main-img img {
+            width: 100%;
+        } 
+        footer {
+            display: flex;
+            background-color: rgba(182, 195, 199, 0.726);
+            justify-content: space-evenly;
+            padding: 24px 0 24px 0;
+        }
+        .copy-right {
+            font-size: 20px;
+            color: rgb(120, 153, 136);
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <!-- Build a Pancake Stack with CSS Grid -->
+   <div class="container">
+       <header>
+            <nav class="navigation">
+                <img class="logo" src="img/logo.png" alt="">
+                <a href="" class="nav-item">Home</a>
+                <a href="" class="nav-item">About</a>
+                <a href="" class="nav-item">Services</a>
+                <a href="" class="nav-item">Contact-Us</a>
+            </nav>
+            <button class="nav-button">Getting Started</button>
+       </header>
+
+       <main>
+           <div class="main-content">
+               <h1 class="headline">
+                   Collaborate like never before
+                </h1>
+               <p class="description">
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptates dolorem repellat alias, tempore magnam obcaecati soluta! Unde, qui cum.
+               </p>
+               <button class="play-button">
+                <i class="fa fa-play-circle"></i>
+                   Discover Videos
+               </button>
+            </div>
+            <div class="main-img">
+                <img src="img/data.webp" alt="">
+            </div>
+       </main>
+
+       <footer>
+           <div>
+               <a href="" class="social-icon">
+                   <i class="fa fa-twitter"></i>
+                </a>
+               <a href="" class="social-icon">
+                <i class="fa fa-instagram"></i>
+               </a>
+               <a href="" class="social-icon">
+                <i class="fa fa-youtube-play"></i>
+               </a>
+               <a href="" class="social-icon">
+                <i class="fa fa-facebook"></i>
+               </a>
+           </div>
+           <span class="copy-right">all rights reserved &#169 Rdg</span>
+       </footer>
+       
+   </div>
+    
+</body>
+</html>
